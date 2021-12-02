@@ -6,7 +6,7 @@ A common feature request from developers familiar with the web is background-ima
 
 ## Image Source :
 
-The image source either a <b>remote URL</b> or a <b>local file</b> resource</p>.
+The image source either a <b>remote URL</b> or a <b>local file</b> resource.
 
 - If we set image source from local file, then we need to specify the full local image path into require() function.
 
