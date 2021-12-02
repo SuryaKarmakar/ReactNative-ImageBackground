@@ -1,31 +1,32 @@
 # React Native ImageBackground
 
-# Props :
+A common feature request from developers familiar with the web is background-image. To handle this use case, you can use the <ImageBackground> component, which has the same props as <Image>, and add whatever children to it you would like to layer on top of it.
+
+# Usage :
 
 ## Image Source :
 
-<p>The image source either a remote URL or a local file resource</p>
-<ul>
-<li>
-<p>If we set image source from local file, then we need to specify the full local image path into require() function</p>
+The image source either a <b>remote URL</b> or a <b>local file</b> resource</p>.
+
+- If we set image source from local file, then we need to specify the full local image path into require() function.
 
 ```js
-source={require('./src/images/logo.png')}
+<ImageBackground source={require("./backGroundImg.png")}>
+  {/* children component */}
+</ImageBackground>
 ```
 
-</li>
-<p>If we set image source from remote URL, then we need to specify the full URL link as a uri format</p>
+If we set image source from remote URL, then we need to specify the full URL link as a uri format.
 
 ```js
-source={{uri: 'https://reactjs.org/logo-og.png'}}
+<ImageBackground source={{ uri: "https://reactjs.org/logo-og.png" }}>
+  {/* children component */}
+</ImageBackground>
 ```
-
-</li>
-</ul>
 
 ## style :
 
-<p>You can set your background image style</p>
+You can set your background <b>View style</b>.
 
 ```js
 style={{
@@ -35,19 +36,10 @@ style={{
     }}
 ```
 
-## Usage
+## imageStyle :
 
-```
- $ git clone https://github.com/SuryaKarmakar/React-Native-ImageBackground.git
- $ cd React-Native-ImageBackground
- $ npm install
- $ npm run [web, android, ios]
+You can set your background <b>Image style</b>.
 
-```
-
-## Run with Expo
-
-```
- $ expo start --[web, android, ios]
-
+```js
+ imageStyle={{ borderRadius: 20 }}
 ```
