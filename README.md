@@ -16,7 +16,7 @@ The image source either a <b>remote URL</b> or a <b>local file</b> resource</p>.
 </ImageBackground>
 ```
 
-If we set image source from remote URL, then we need to specify the full URL link as a uri format.
+- If we set image source from remote URL, then we need to specify the full URL link as a uri format.
 
 ```js
 <ImageBackground source={{ uri: "https://reactjs.org/logo-og.png" }}>
